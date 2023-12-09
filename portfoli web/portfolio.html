@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfoli.css">
+    <script src="portfolio.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo33.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li> <a href="#porfolio">Portfolio</a></li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hello, my name is <br><span>Szabolcs Gémes</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profil.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiens</p>
+                        <p class="tab-links" onclick="opentab('moreinfo')">More information</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>c# programmer</span><br>
+                                c# programming and project creation</li>
+                            <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>I have no experience</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="moreinfo">
+                        <ul>
+                            <li>I like to take apart and assemble computers,<br> among programming languages <br> ​​I am good at C# and I also like to do web programming</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="letöltés.png">
+                <div class="layer">
+                    
+                    <h3>ComfortCove</h3>
+                    <p></p>
+                    <a href="#"><i class="link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="logo2.png">
+                <div class="layer">
+                    
+                    <h3>Match Maker</h3>
+                    <p></p>
+                    <a href="#"><i class="link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="">
+                <div class="">
+                    
+                    <h3></h3>
+                    <p></p>
+                    <a href="#"><i class="link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-planet"></i> szt2gemsza@vasvari.org</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0620...</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="PDF kell majd ide" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" class="msg" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+     
+</body>
+</html>
